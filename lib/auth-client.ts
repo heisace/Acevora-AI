@@ -1,3 +1,9 @@
-import { createAuthClient } from 'better-auth/client'
-
-export const authClient = createAuthClient()
+// Stub auth client for development
+export const authClient = {
+  signUp: {
+    email: async () => ({ error: null }),
+  },
+  signIn: {
+    email: async () => ({ error: null }),
+  },
+}
