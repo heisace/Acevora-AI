@@ -1,9 +1,5 @@
-'use client'
-
 import { useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
-import { auth } from '@/lib/auth'
-import { headers } from 'next/headers'
 
 interface AdminStats {
   totalUsers: number
