@@ -1,16 +1,7 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { auth } from '@/lib/auth'
-import { headers } from 'next/headers'
-import { redirect } from 'next/navigation'
 
-export default async function HomePage() {
-  const session = await auth.api.getSession({ headers: await headers() })
-  
-  if (session?.user) {
-    redirect('/dashboard')
-  }
-
+export default function HomePage() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-slate-950 dark:to-slate-900">
       {/* Header */}
