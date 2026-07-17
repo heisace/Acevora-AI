@@ -1,10 +1,6 @@
-import { Pool } from 'pg'
-import { drizzle } from 'drizzle-orm/node-postgres'
-
-// Stub database connection - will be properly configured later
-export const pool = new Pool({
-  connectionString: process.env.DATABASE_URL || 'postgresql://localhost/studygen',
-})
-
-// Stub drizzle instance
-export const db = drizzle(pool)
+/**
+ * Single source of truth for the database client.
+ * Re-exports from ./db/index so every import of `@/lib/db` gets the
+ * schema-aware Drizzle instance.
+ */
+export { db, pool } from './db/index'
