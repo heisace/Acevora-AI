@@ -9,11 +9,11 @@ export default function HomePage() {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">StudyGen AI</div>
           <div className="flex gap-4">
-            <Link href="/sign-in">
-              <Button variant="outline">Sign In</Button>
+            <Link href="/chat">
+              <Button>Get Started Free</Button>
             </Link>
-            <Link href="/sign-up">
-              <Button>Get Started</Button>
+            <Link href="/sign-in">
+              <Button variant="outline">Connect Account</Button>
             </Link>
           </div>
         </div>
@@ -28,7 +28,7 @@ export default function HomePage() {
           <p className="text-xl text-slate-600 dark:text-slate-300 mb-8">
             Transform your study materials into AI-powered summaries, flashcards, and interactive quizzes. Master any subject faster.
           </p>
-          <Link href="/sign-up">
+          <Link href="/chat">
             <Button size="lg" className="text-lg px-8">Start Learning Free</Button>
           </Link>
         </div>
